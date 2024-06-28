@@ -1,0 +1,10 @@
+Blade Runner 2049, 2017, Action/Drama, 500000, https://www.imdb.com/title/tt1856101
+Nightcrawler, 2014, Crime/Drama, 375000, https://www.imdb.com/title/tt2872718
+No Country for Old Men, 2007, Crime/Thriller, 700000, https://www.imdb.com/title/tt1856101
+Taxi Driver, 1976, Crime/Drama, 575000, https://www.imdb.com/title/tt0075314
+Forrest Gump, 1994, Drama/Romance, 650000, https://www.imdb.com/title/tt0075314
+The Silence of the Lambs, 1991, Crime/Thriller, 300000, https://www.imdb.com/title/tt0102926
+Good Will Hunting, 1997, Drama/Romance, 475000, https://www.imdb.com/title/tt0119217
+All Quiet on the Western Front, 2022, Action/Drama, 650000, https://www.imdb.com/title/tt1016150
+The Pianist, 2002, Biography/Drama, 500000, https://www.imdb.com/title/tt0253474
+The Iron Giant, 1999, Animation/Adventure, 425000, https://www.imdb.com/title/tt0129167

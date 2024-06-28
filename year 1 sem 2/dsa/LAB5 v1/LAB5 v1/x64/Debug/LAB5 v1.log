@@ -1,0 +1,10 @@
+﻿  ExtendedTest.cpp
+C:\uni\DSA\LAB5 v1\LAB5 v1\ExtendedTest.cpp(192,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\uni\DSA\LAB5 v1\LAB5 v1\ExtendedTest.cpp(225,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\uni\DSA\LAB5 v1\LAB5 v1\ExtendedTest.cpp(210,20): warning C4101: 'ex': unreferenced local variable
+C:\uni\DSA\LAB5 v1\LAB5 v1\ExtendedTest.cpp(217,20): warning C4101: 'ex': unreferenced local variable
+  ShortTest.cpp
+  SMMIterator.cpp
+  SortedMultiMap.cpp
+  Generating Code...
+LINK : fatal error LNK1168: cannot open C:\uni\DSA\LAB5 v1\x64\Debug\LAB5 v1.exe for writing

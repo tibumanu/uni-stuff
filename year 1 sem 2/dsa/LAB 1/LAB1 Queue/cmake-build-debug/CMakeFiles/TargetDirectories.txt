@@ -1,0 +1,3 @@
+C:/uni/DSA/LAB 1/LAB1 Queue/cmake-build-debug/CMakeFiles/untitled1.dir
+C:/uni/DSA/LAB 1/LAB1 Queue/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/uni/DSA/LAB 1/LAB1 Queue/cmake-build-debug/CMakeFiles/rebuild_cache.dir

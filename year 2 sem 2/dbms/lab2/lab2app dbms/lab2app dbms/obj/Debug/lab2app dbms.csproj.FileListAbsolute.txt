@@ -1,0 +1,13 @@
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\bin\Debug\lab2app dbms.exe.config
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\bin\Debug\lab2app dbms.exe
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\bin\Debug\lab2app dbms.pdb
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\obj\Debug\lab2app dbms.csproj.AssemblyReference.cache
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\obj\Debug\lab2app_dbms.Form1.resources
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\obj\Debug\lab2app_dbms.Properties.Resources.resources
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\obj\Debug\lab2app dbms.csproj.GenerateResource.cache
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\obj\Debug\lab2app dbms.csproj.CoreCompileInputs.cache
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\obj\Debug\lab2app .33EFFC81.Up2Date
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\obj\Debug\lab2app dbms.exe
+C:\sem4\DBMS\lab2\lab2app dbms\lab2app dbms\obj\Debug\lab2app dbms.pdb

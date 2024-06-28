@@ -1,0 +1,3 @@
+C:/uni/DSA/seminar 2/s2/cmake-build-debug/CMakeFiles/s2.dir
+C:/uni/DSA/seminar 2/s2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/uni/DSA/seminar 2/s2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

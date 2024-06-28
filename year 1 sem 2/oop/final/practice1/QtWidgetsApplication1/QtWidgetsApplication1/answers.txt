@@ -1,0 +1,4 @@
+1,1,Tibu,Maybe,3
+2,1,Cristian,No,2
+3,3,Tibu,Yes,2
+41,3,Pisu,Definitely!!,0

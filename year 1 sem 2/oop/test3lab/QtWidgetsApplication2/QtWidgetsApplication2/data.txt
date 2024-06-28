@@ -1,0 +1,6 @@
+C++|programming language|general-purpose programming language
+Quadratic equation|Square root|a*x^2 + b*x + c = 0
+Java|programming language|well suited for use use on the WWW
+Jack Sparrow|pirate|Protagonist in the Pirates of the Caribbean
+Zealous|keywords here|explain what zealous means
+Abecedar|lower education|abcdefghijklmnopqrstuvwxyz

@@ -1,0 +1,21 @@
+[2024-04-09 16:58:24] [info] Start Program:
+Path:"C:\sem4\OOP\a45\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe"
+Arguments:
+Working directory: "C:\sem4\OOP\a45\ConsoleApplication1\ConsoleApplication1\"
+Modules: Selected: C:\sem4\OOP\a45\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe Excluded: 
+Sources: Selected: C:\sem4\OOP\a45\ConsoleApplication1\ConsoleApplication1 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\Tibuman\AppData\Local\Temp\zfcult2z.dsc 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-04-09 16:58:24] [info] Module: C:\sem4\OOP\a45\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe is selected because it matches selected pattern: C:\sem4\OOP\a45\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+[2024-04-09 16:58:24] [info] ----------------------------------------------------
+[2024-04-09 16:58:24] [info] Coverage binary generated in file: C:\Users\Tibuman\AppData\Local\Temp\zfcult2z.dsc
+[2024-04-09 16:58:24] [info] ----------------------------------------------------

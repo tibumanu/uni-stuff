@@ -1,0 +1,11 @@
+# ninja log v5
+14	409	7023475152606838	CMakeFiles/untitled1.dir/Queue.cpp.obj	2e32348e48f5317e
+10	226	7023475150777367	CMakeFiles/untitled1.dir/ShortTest.cpp.obj	c30c74a74ba6c307
+1	385	7023475152357443	CMakeFiles/untitled1.dir/main.cpp.obj	adb89ee796b40a28
+6	418	7023475152706801	CMakeFiles/untitled1.dir/ExtendedTest.cpp.obj	e13869ead98e3846
+418	741	7023475155750859	untitled1.exe	ae5c85b6fe0b4824
+73	612	7024003877957568	CMakeFiles/untitled1.dir/ShortTest.cpp.obj	226e8b1c4f5093d4
+76	613	7024003877967601	CMakeFiles/untitled1.dir/Queue.cpp.obj	c42c2f2ac0cff14e
+0	614	7024003877987577	CMakeFiles/untitled1.dir/ExtendedTest.cpp.obj	642b322011d5da5b
+71	624	7024003878087546	CMakeFiles/untitled1.dir/main.cpp.obj	9466111f9fff436f
+624	937	7024003881147557	untitled1.exe	ae5c85b6fe0b4824

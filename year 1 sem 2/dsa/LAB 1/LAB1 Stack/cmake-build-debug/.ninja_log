@@ -1,0 +1,7 @@
+# ninja log v5
+4	145	7023992003294994	CMakeFiles/LAB1_Stack.dir/ShortTest.cpp.obj	806f1f6e14f733a3
+0	411	7023992191486735	CMakeFiles/LAB1_Stack.dir/Stack.cpp.obj	b2311225372f1542
+0	659	7023985417571524	CMakeFiles/LAB1_Stack.dir/main.cpp.obj	8f866c58f3d9e06c
+3	672	7023985417711508	CMakeFiles/LAB1_Stack.dir/ExtendedTest.cpp.obj	92ed000afad98075
+0	91	7024852927736761	build.ninja	a17a3ce44582be6a
+412	512	7023992192306738	LAB1_Stack.exe	7b5e53cc9046b14c

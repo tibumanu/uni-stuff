@@ -1,0 +1,3 @@
+name1|phd student
+name2|postdoc
+name3|senior

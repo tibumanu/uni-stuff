@@ -1,0 +1,3 @@
+﻿This is a test body for the Data Compression Module. It'll compress everything into "compressed.bin".
+This contains special characters ! @ # % ^ & * _ + and also 
+new lines.
