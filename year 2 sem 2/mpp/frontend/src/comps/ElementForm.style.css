@@ -1,0 +1,33 @@
+.form-container{
+    text-align: center;
+}
+
+label{
+    font-size: 1.5rem;
+    margin: 5px;
+}
+
+input[type="text"]{
+    height: 3rem;
+    padding-left: 1rem;
+    margin: 5px;
+}
+
+input[type="submit"]{
+    height: 3rem;
+    width: 10rem;
+    background-color: rgba(22, 39, 15, 0.741);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+input[type="button"]{
+    height: 3rem;
+    width: 10rem;
+    background-color: rgba(22, 39, 15, 0.741);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

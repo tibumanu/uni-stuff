@@ -1,0 +1,40 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+th{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+input[type="button"]{
+  background-color: #192819; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd22;
+}

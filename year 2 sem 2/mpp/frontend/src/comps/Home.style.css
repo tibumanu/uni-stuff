@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(22, 34, 6, 0.614);
+    color: white;
+    font-family: 'Courier New', Courier, monospace, bold;
+    font-size: 1.5rem;
+}
+
+.article-header{
+    background-color: rgba(30, 54, 21, 0.837);
+    color: white;
+    text-align: center;
+    /* padding: 10px; */
+    font-family: 'Courier New', Courier, monospace, bold;
+    font-size: 2rem;
+    /* border: 3px solid transparent; */
+}
+
+.section-content{
+    margin-top: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+}

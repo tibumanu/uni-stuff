@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Repository.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Repository.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Service.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Service.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Domain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Domain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Repository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Repository.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Domain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Domain.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\UI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Tests.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Service.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Service.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Tests.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6959163F-602E-465F-A18A-93913813EFD3}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\UI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tests.cpp",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Tests.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Tests.cpp",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Tests.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\Tests.cpp",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAEQAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-09T11:10:08.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tests.h",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Tests.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Tests.h",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Tests.h",
+              "RelativeToolTip": "ConsoleApplication1\\Tests.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-09T11:09:45.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UI.cpp",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\UI.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\UI.cpp",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\UI.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\UI.cpp",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAKMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-09T11:01:23.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UI.h",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\UI.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\UI.h",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\UI.h",
+              "RelativeToolTip": "ConsoleApplication1\\UI.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-09T11:01:14.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Service.cpp",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Service.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Service.cpp",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Service.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\Service.cpp",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAuwBQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-09T11:00:39.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Service.h",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Service.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Service.h",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Service.h",
+              "RelativeToolTip": "ConsoleApplication1\\Service.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-09T11:00:16.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Repository.cpp",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Repository.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Repository.cpp",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Repository.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\Repository.cpp",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-09T10:59:07.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Repository.h",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Repository.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Repository.h",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Repository.h",
+              "RelativeToolTip": "ConsoleApplication1\\Repository.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-09T10:57:17.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Domain.cpp",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Domain.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Domain.cpp",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Domain.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\Domain.cpp",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAuwHIAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-09T10:56:40.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Domain.h",
+              "DocumentMoniker": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Domain.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Domain.h",
+              "ToolTip": "C:\\sem4\\OOP\\a45\\ConsoleApplication1\\ConsoleApplication1\\Domain.h",
+              "RelativeToolTip": "ConsoleApplication1\\Domain.h",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-09T10:55:51.669Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@for (news of this.news; track news.ID) {
+    <div class="flex flex-col border-b border-gray-400 p-4 bg-white">
+        <div class="flex items-center">
+            <a class="text-xl hover:underline font-semibold text-gray-800" href="/view-article/{{ news.ID }}">{{ news.Title }}</a>
+            <div class="text-sm text-gray-600 ml-2">posted in {{ news.Category }}</div>
+            <div class="ml-auto text-sm text-gray-600">{{ news.Date }}</div>
+        </div>
+        <div class="text-sm text-gray-700">By {{ news.Producer.Username }}</div>
+    </div>
+} @empty {
+    <div class="text-center text-3xl mb-4 pt-8 text-gray-800">
+        No news found
+    </div>
+}
