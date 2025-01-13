@@ -1,0 +1,52 @@
+Sync Queue:
+	q: Queue<int>
+	mtx: Mutex
+	cap: int (=5)
+
+we have the following operations and/or methods:
+	empty(): bool
+	full(): bool
+	enqueue(int): void
+	dequeue(): int
+
+bool empty(){
+	mtx.lock();
+	bool tmp = (q.length() == 0)	;
+	mtx.unlock();
+	return tmp; }
+
+bool full(){
+	mtx.lock();
+	bool tmp = (q.length == cap);
+	mtx.unlock();
+	return tmp; }
+
+void enqueue(int e){
+	mtx.lock();
+	q.enqueue(e);
+	mtx.unlock(); }
+
+int dequeue(){
+	mtx.lock();
+	int tmp = q.dequeue();
+	mtx.unlock();
+	return tmp; }
+
+
+void producers(){
+	for(i = 1, 100){
+		if syncQueue.full()
+			condVar.wait();
+		syncQueue.enqueue(a[i] * b[i]);
+		condVar.signal();
+	}
+}
+
+void consumer(){
+	for(i = 1, 100){
+		if syncQueue.empty();
+			condVar.wait();
+		sum += syncQueue.dequeue();
+		condVar.signal();
+	}
+}

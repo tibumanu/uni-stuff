@@ -1,0 +1,5 @@
+states = {A, B, C}
+epsilon = {0, 1}
+initial = A
+final = {C}
+delta = {(A, 0, A), (A, 0, B), (A, 1, B), (B, 1, C), (C, 1, C)}

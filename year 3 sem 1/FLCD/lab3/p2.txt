@@ -1,0 +1,8 @@
+PROGRAM p2{
+	int n, iterator;
+	bool isPrime;	isPrime = true;
+	if(n%2 == 0){ isPrime = false; write("Given number is not a prime"); EOP;}
+	for(iterator = 3; iterator*iterator <= n; iterator = iterator + 2;){ if(a%iterator == 0){ write("Given number is not a prime"; EOP;}}
+	write("Given number is a prime");
+	EOP;
+}

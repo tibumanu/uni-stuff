@@ -1,0 +1,5 @@
+PROGRAM -1
+p1error 0
+{ -1
+int -1
+Lexical error at line 2: token `0a`

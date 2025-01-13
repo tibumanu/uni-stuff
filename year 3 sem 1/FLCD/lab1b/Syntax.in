@@ -1,0 +1,53 @@
+program = "PROGRAM{" {declaration | stmt} programEnd "}"
+(* e.g:
+	PROGRAM {
+	<declarations and/or statements, in whatever order>
+	EOP; 
+	} 
+*)
+
+programEnd = "EOP;"
+
+declaration = type " " [arraydeclaration] " " identifier{", " identifier}
+(* e.g:
+	int n, m;
+	char array[255] text, paragraph;
+*)
+
+type = "bool" | "char" | "int" | "string"
+
+arraydeclaration = "array" "[" n "]"
+
+simpleStmt = assignstmt | iostmt | programEnd
+ioStmt = "read" "(" identifier {", " identifier} | "write" "(" identifier {", " identifier}
+(* e.g: read(a, b, c); write(x, y, z); *)
+assignStmt = identifier "=" expression
+
+stmt = simpleStmt | structStmt
+stmtList = stmt ";" | stmt ";" stmtList
+(* e.g: do1; do2; *)
+structStmt = cmpdStmt | ifStmt | whileStmt
+cmpdStmt = "{" stmtList "}"
+(* e.g: { do1; do2; } *)
+
+ifStmt = "if" "(" condition ")" structStmt ["else structStmt"]
+whileStmt = "while(" condition ")" structStmt
+(* e.g:
+	while(x > 2 & x < 5){ doWork; }
+*)
+condition = cond | cond logical cond
+cond = expression relation expression
+
+integer = nconst
+expression = term { ("+" | "-") term }
+term = factor { ("*" | "/" | "^" | "%") factor }
+factor = "(" expression ")" | identifier | indexedIdentifier | integer
+(* e.g:
+		(someArray[i] + x % 2) * 5
+		The whole line above is an expression.
+		`someArray[i]` is a term, `x % 2` is a (composed) term in which `x` is a factor, `(someArray[i] + x % 2)` is a (composed) term, and `5` is a term (-> factor -> integer)
+*)
+
+indexedIdentifier = identifier "[" (integer | identifier) "]"
+relation = "<" | ">" | "<=" | ">=" | "==" | "!="
+logical = "&" | "|"

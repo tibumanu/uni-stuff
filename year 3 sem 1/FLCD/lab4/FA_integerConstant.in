@@ -1,0 +1,5 @@
+states = {q0, zero, sign, number}
+epsilon = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, +, -}
+initial = q0
+final = {zero, number}
+delta = {(q0, 0, zero), (q0, +, sign), (q0, -, sign), (q0, 1, number), (q0, 2, number), (q0, 3, number), (q0, 4, number), (q0, 5, number), (q0, 6, number), (q0, 7, number), (q0, 8, number), (q0, 9, number), (sign, 1, number), (sign, 2, number), (sign, 3, number), (sign, 4, number), (sign, 5, number), (sign, 6, number), (sign, 7, number), (sign, 8, number), (sign, 9, number), (number, 0, number), (number, 1, number), (number, 2, number), (number, 3, number), (number, 4, number), (number, 5, number), (number, 6, number), (number, 7, number), (number, 8, number), (number, 9, number)}

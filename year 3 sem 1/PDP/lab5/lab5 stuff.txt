@@ -1,0 +1,33 @@
+lab5:
+
+Polynomial:
+	int degree;
+	int[] coefficients; // len(coefficients) = degree + 1
+
+Shift :: ">>" (poly, offset) :: polynomial * x^(offset)
+	shift(1 + x + x^2, 3) = 1 * x^3 + x ^ 4 + x ^ 5
+	// O(n)
+
+Add :: "+" (poly1, poly2) // possible for degree to go down, O(n)
+Subtract :: "-" (poly1, poly2) 
+Multiply :: "*" (poly1, poly2) // O(n^2)
+
+for i = 0, poly1.Degree
+	for j = 0, poly2.Degree
+		result[i+j] += poly1.coefficients[i] +
+
+Karatsuba
+if poly1.Degree < threshold || poly2.degree < threshold
+	return poly1*poly2	// Karatsuba not always better
+
+(low_1, high_1) = poly1
+(low_2, high_2) = poly2
+// low e pana pe la mijloc, high e ce a ramas cu puterile cu n/2 scazute
+
+z_0 = Karatsuba(low_1, low_2)
+z_1 = Karatsuba(low_1 + high_1, low_2 + high_2)
+z_2 = Karatsuba(high_1, high_2)
+
+return:
+	(z_2 ">>" n) + ((z_1 - z_2 - z_0) ">>" n/2) + z_0
+// complexity: O(n ^ (log_2 3))

@@ -1,0 +1,22 @@
+CONSISTENCY CHECK
+thread dedicat
+
+while True:
+	foreach entity in entities:
+		entity->mutex->aquire()
+	verify consistency
+	foreach entity in entities:
+		entity->mutex-release()
+	sleep(random number)
+
+Account:
+int id;
+int amount;
+Mutex mtx;
+
+
+we first lock the acc with the lesser id
+check consistency with the (global) log - a list of 3 element sets
+
+
+3.

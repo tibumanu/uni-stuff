@@ -1,0 +1,30 @@
+Lexic:
+	a. Special characters, representing:
+		Operators:
+			Arithmetic: + (addition), - (subtraction), * (multiplication), ^ (power), / (division), % (mod)
+			Relational: == (equality), < (smaller), > (greater), <= (smaller or equal), >= (greater or equal), != (inequality)
+			Logical: & (and), | (or), ! (not)
+			Assignment: =
+			Index: []
+		Separators:
+			{ } ( ) ; , <space> <newline>
+		Reserved words:
+			PROGRAM, FUNCTION, METHOD, read, write, if, else, for, do, while, break, int, char, string, list, bool, true, false return, EOP
+
+	b. Identifiers:
+		A sequence of letters, underscores and digits; the first character is a letter; the rule is:
+			identifier = letter | letter{letter | underscore | digit}
+			letter = "a" | "b" | ... | "z" | "A" | "B" | ... | "Z"
+			underscore = "_"
+			digit = "0" | "1" | ... | "9"
+	
+	c. Constants:
+		1. integer:
+			nconst = "0" | n | "-"n
+			n = nonzerodigit{digit}
+			nonzerodigit = "1" | "2" | ... | "9"
+		2. character:
+			character = 'letter' | 'digit' | ' ' | '.' | ',' | '?' | '!' | '~' | '@' | '#' | '$' | '%' | '^' | '&' | '*' | '(' | ')' | '-' | '+' | '_' | '=' | ':' | '>' | '<'
+		3. string:
+			string = "{character}"
+	const = integer | character | string

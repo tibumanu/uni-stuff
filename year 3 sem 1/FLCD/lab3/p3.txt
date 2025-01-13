@@ -1,0 +1,11 @@
+PROGRAM p3{
+	int n, min, max;
+	read(n);
+	if(n<1){ write("Bad n given"); EOP;}
+	int currentNumber;
+	read(currentNumber);	n = n-1;
+	min = currentNumber; max = currentNumber;
+	while(n!=0){ read(currentNumber); if(currentNumber>max){ max = currentNumber; } if(currentNumber<min){ min = currentNumber;} n = n-1;}
+	write("Min and max are ", min, "and ", max);
+	EOP;
+}

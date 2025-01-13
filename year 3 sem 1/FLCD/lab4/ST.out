@@ -1,0 +1,10 @@
+p3 0
+n 1
+min 2
+max 3
+currentNumber 4
+1 0
+"Bad n given" 1
+0 2
+"Min and max are " 3
+"and " 4
