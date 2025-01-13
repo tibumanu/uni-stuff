@@ -1,0 +1,20 @@
+Dataset,Best Model,AUROC,Specificity,Sensitivity,Best Parameters,Transformation,Resample Strategy,Impute Strategy,Scaler
+1,Naive Bayes,0.7692307692307692,0.6153846153846154,0.7142857142857143,{'var_smoothing': 1e-09},Yeo-Johnson,ADASYN,KNN,robust
+3,Naive Bayes,0.8571428571428571,0.6923076923076923,0.7142857142857143,{'var_smoothing': 0.001},Yeo-Johnson,SMOTE,KNN,robust
+5,Random Forest,0.8541666666666667,0.8333333333333334,0.25,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}",Yeo-Johnson,ADASYN,KNN,robust
+7,Support Vector Classifier,0.8023715415019763,0.9565217391304348,0.3636363636363636,"{'kernel': 'rbf', 'gamma': 'scale', 'C': 10.0}",log,SMOTE,KNN,standard
+8,Decision Tree,0.6071428571428571,0.7142857142857143,0.5,"{'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}",log,SMOTE,KNN,robust
+10,Decision Tree,0.7916666666666666,0.9166666666666666,0.6666666666666666,"{'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': None}",log,ADASYN,KNN,robust
+12,Random Forest,0.7777777777777777,0.6666666666666666,0.6666666666666666,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}",log,ADASYN,KNN,robust
+13,Decision Tree,0.8636363636363636,0.7272727272727273,1.0,"{'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': None}",Yeo-Johnson,ADASYN,KNN,robust
+15,Naive Bayes,0.902777777777778,0.8333333333333334,0.8333333333333334,{'var_smoothing': 1e-09},log,ADASYN,KNN,robust
+32,Decision Tree,0.6647727272727273,0.625,0.5454545454545454,"{'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': None}",log,SMOTE,KNN,robust
+33,Random Forest,0.6875,0.25,1.0,"{'n_estimators': 200, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': None, 'max_depth': None}",log,ADASYN,KNN,robust
+34,Logistic Regression,0.75,0.75,0.6666666666666666,"{'solver': 'lbfgs', 'penalty': 'l2', 'C': 100.0}",log,ADASYN,KNN,standard
+35,Decision Tree,0.64,0.8,0.5,"{'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': None, 'max_depth': 20}",Yeo-Johnson,SMOTE,KNN,robust
+36,Logistic Regression,0.7619047619047619,0.7142857142857143,0.3333333333333333,"{'solver': 'saga', 'penalty': 'l2', 'C': 100.0}",log,ADASYN,KNN,standard
+41,Random Forest,0.7833333333333333,0.7,0.8333333333333334,"{'n_estimators': 300, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': None, 'max_depth': None}",log,ADASYN,KNN,robust
+168,Decision Tree,0.5714285714285714,0.8571428571428571,0.5,"{'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': None, 'max_depth': 10}",log,ADASYN,KNN,robust
+169,Support Vector Classifier,0.6296296296296297,0.6666666666666666,0.6666666666666666,"{'kernel': 'poly', 'gamma': 'scale', 'C': 10.0}",log,SMOTE,KNN,robust
+171,Naive Bayes,0.7111111111111111,0.6666666666666666,0.6,{'var_smoothing': 1e-09},Yeo-Johnson,ADASYN,KNN,robust
+202,Decision Tree,0.5833333333333334,0.6666666666666666,0.5,"{'min_samples_split': 10, 'min_samples_leaf': 4, 'max_features': None, 'max_depth': 10}",Yeo-Johnson,SMOTE,KNN,standard

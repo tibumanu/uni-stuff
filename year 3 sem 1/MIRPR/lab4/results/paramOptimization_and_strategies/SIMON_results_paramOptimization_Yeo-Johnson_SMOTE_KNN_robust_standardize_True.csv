@@ -1,0 +1,19 @@
+Dataset,Best Model,AUROC,Specificity,Sensitivity,Best Parameters
+1,Naive Bayes,0.7472527472527472,0.6153846153846154,0.7142857142857143,{'var_smoothing': 1e-09}
+3,Naive Bayes,0.8571428571428571,0.6923076923076923,0.7142857142857143,{'var_smoothing': 0.001}
+5,Support Vector Classifier,0.8333333333333334,0.8333333333333334,0.25,"{'kernel': 'rbf', 'gamma': 'scale', 'C': 10.0}"
+7,Support Vector Classifier,0.7944664031620554,0.9565217391304348,0.2727272727272727,"{'kernel': 'rbf', 'gamma': 'scale', 'C': 10.0}"
+8,Support Vector Classifier,0.5612244897959183,0.7142857142857143,0.2857142857142857,"{'kernel': 'rbf', 'gamma': 'scale', 'C': 10.0}"
+10,Naive Bayes,0.6111111111111112,0.8333333333333334,0.0,{'var_smoothing': 1e-09}
+12,Decision Tree,0.6527777777777777,0.6666666666666666,0.6666666666666666,"{'min_samples_split': 5, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}"
+13,Random Forest,0.9090909090909091,0.9090909090909091,0.5,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}"
+15,Random Forest,0.8888888888888888,0.9166666666666666,0.6666666666666666,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}"
+32,Support Vector Classifier,0.6534090909090908,0.8125,0.36363636363636365,"{'kernel': 'rbf', 'gamma': 'scale', 'C': 10.0}"
+33,Random Forest,0.6875,0.25,1.0,"{'n_estimators': 200, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': None, 'max_depth': None}"
+34,Logistic Regression,0.6666666666666666,0.75,0.0,"{'solver': 'saga', 'penalty': 'l2', 'C': 100.0}"
+35,Decision Tree,0.64,0.8,0.5,"{'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': None, 'max_depth': 20}"
+36,Support Vector Classifier,0.8095238095238095,0.8571428571428571,0.0,"{'kernel': 'rbf', 'gamma': 'scale', 'C': 10.0}"
+41,Random Forest,0.7166666666666667,0.8,0.6666666666666666,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'sqrt', 'max_depth': 20}"
+169,Naive Bayes,0.6111111111111112,0.6666666666666666,0.5,{'var_smoothing': 0.1}
+171,Naive Bayes,0.7111111111111111,0.6666666666666666,0.6,{'var_smoothing': 0.001}
+202,Logistic Regression,0.7500000000000001,1.0,0.0,"{'solver': 'lbfgs', 'penalty': 'l2', 'C': 100.0}"

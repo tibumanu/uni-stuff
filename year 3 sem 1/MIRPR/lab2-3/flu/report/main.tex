@@ -1,0 +1,557 @@
+%latex model.tex
+%bibtex model
+%latex model.tex
+%latex model.tex
+%pdflatex model.tex
+
+%se poate lucra si online (de ex www.overleaf.com)
+
+
+\documentclass[runningheads,a4paper,11pt]{report}
+
+\usepackage{algorithmic}
+\usepackage{algorithm} 
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{caption}
+\usepackage{comment} 
+\usepackage{epsfig} 
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{geometry} 
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref} 
+\usepackage[latin1]{inputenc}
+\usepackage{multicol}
+\usepackage{multirow} 
+\usepackage{rotating}
+\usepackage{setspace}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{xcolor}
+
+\geometry{a4paper,top=3cm,left=2cm,right=2cm,bottom=3cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Project's name}
+\fancyhead[RE,LO]{Team's name}
+\fancyfoot[RE,LO]{MIRPR 2024-2025}
+\fancyfoot[LE,RO]{\thepage}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{%
+  \color{lime}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{%
+  \color{lime}\leaders\hrule height \footrulewidth\hfill}}
+
+\hypersetup{
+pdftitle={artTitle},
+pdfauthor={name},
+pdfkeywords={pdf, latex, tex, ps2pdf, dvipdfm, pdflatex},
+bookmarksnumbered,
+pdfstartview={FitH},
+urlcolor=cyan,
+colorlinks=true,
+linkcolor=red,
+citecolor=green,
+}
+% \pagestyle{plain}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\linespread{1}
+
+% \pagestyle{myheadings}
+
+\makeindex
+
+
+\begin{document}
+
+\begin{titlepage}
+\sloppy
+
+\begin{center}
+BABE\c S BOLYAI UNIVERSITY, CLUJ NAPOCA, ROM\^ ANIA
+
+FACULTY OF MATHEMATICS AND COMPUTER SCIENCE
+
+\vspace{6cm}
+
+\Huge \textbf{FluPRINT: AI/ML - Driven Analysis and Prediction of Influenza Evolution and Spread with Reference to SIMON }
+
+\vspace{1cm}
+
+\normalsize -- MIRPR report --
+
+\end{center}
+
+
+\vspace{5cm}
+
+\begin{flushright}
+\Large{\textbf{Team members}}\\
+\textcommabelow{T}ibu Cristian, IE3, 937, tibu.cristian.sdf@gmail.com
+\end{flushright}
+
+\vspace{4cm}
+
+\begin{center}
+2024-2025
+\end{center}
+
+\end{titlepage}
+
+\pagenumbering{gobble}
+
+\begin{abstract}
+	This project aims to leverage artificial intelligence (AI) and machine learning (ML) techniques to analyze and predict the evolution and spread of influenza. Accurate flu forecasting is essential for effective public health planning and response, and our approach seeks to improve prediction reliability through advanced modeling.
+
+We utilize intelligent methods, including Random Forest Classifiers and Support Vector Machines (SVM), to build predictive models that undergo rigorous evaluation using cross-validation. Our methodology draws inspiration from existing frameworks like SIMON, which informs our strategy and helps validate our approach.
+
+The numerical experiments are conducted using a dataset comprised of historical influenza records, including patient demographics, clinical symptoms, and viral genotypes. The data is preprocessed to address missing values and normalized for optimal model performance. Additionally, the \verb|mulset| function is employed to identify relevant feature subsets, ensuring that the models are trained on the most informative attributes.
+
+Our results indicate that AI-driven models can effectively predict influenza trends, achieving significant accuracy improvements over traditional methods. This study highlights the potential of AI and ML in enhancing epidemiological surveillance and informs future efforts in disease prediction and management.
+
+
+\end{abstract}
+
+
+\tableofcontents
+
+\newpage
+
+\listoftables
+\listoffigures
+\listofalgorithms
+
+\newpage
+
+\setstretch{1.5}
+
+
+
+\newpage
+
+\pagenumbering{arabic}
+
+
+ 
+
+
+\chapter{Introduction}
+\label{chapter:introduction}
+
+\section{What? Why? How?}
+\label{section:what}
+
+Influenza, a contagious viral infection, poses a significant threat to public health, particularly in the context of seasonal outbreaks and potential pandemics. Accurately forecasting the evolution and spread of influenza is crucial for effective public health planning, resource allocation, and intervention strategies. Despite advances in epidemiological modeling, traditional methods often fall short in predicting flu dynamics due to the complexity of the virus's transmission patterns, variability in human behavior, and environmental influences.
+
+The importance of this problem cannot be overstated. Seasonal influenza outbreaks lead to millions of infections and substantial mortality rates globally each year. Understanding and predicting these trends can inform vaccination campaigns, healthcare preparedness, and ultimately save lives. As the influenza virus evolves, the need for robust predictive models becomes increasingly vital to mitigate its impact.
+
+Our approach combines artificial intelligence (AI) and machine learning (ML) techniques to enhance influenza forecasting capabilities. By employing methods such as Random Forest Classifiers and Support Vector Machines, we aim to create predictive models that can analyze historical flu data, identify significant trends, and make accurate predictions about future outbreaks. We also utilize the \verb|mulset| function to isolate relevant features, ensuring that our models are informed by the most critical data points.
+
+
+\paragraph{Why It Must Be Solved by an Intelligent Algorithm}
+
+\begin{enumerate}
+    \item \textbf{Complexity and Variability}: Influenza vaccine responses and virus spread are influenced by numerous factors, including genetics, prior immunity, and environmental conditions. This complexity makes traditional statistical approaches inadequate.
+    \item \textbf{Incomplete Data}: Clinical datasets often contain missing values, which complicate analysis. Machine learning algorithms, especially those designed to handle incomplete data, can extract meaningful insights despite these gaps.
+    \item \textbf{Large Datasets}: The volume of data generated from multiple clinical studies requires automated and scalable solutions. Intelligent algorithms can process large datasets efficiently and identify patterns that are not immediately apparent.
+\end{enumerate}
+ 
+
+This research builds on existing frameworks, such as SIMON, which provides a foundation for our modeling strategies. While SIMON focuses on specific aspects of influenza dynamics, our project seeks to extend this work by employing a broader set of intelligent methods and incorporating more diverse datasets.
+
+The objectives of this thesis are to investigate the efficacy of AI and ML in influenza prediction, develop and validate models, and assess their performance against traditional forecasting methods. We will present the results of our numerical experiments, highlighting the models' predictive accuracy and their implications for public health interventions. Ultimately, we aim to demonstrate that integrating advanced computational techniques into epidemiological research can significantly enhance our understanding of influenza dynamics and improve disease management strategies.
+
+ 
+
+
+\section{Paper structure and original contribution(s)}
+\label{section:structure}
+
+    The research presented in this paper advances the theory, design, and implementation of several models aimed at enhancing influenza prediction and management.
+
+The main contribution of this report is to present an intelligent algorithm for solving the problem of accurately forecasting the evolution and spread of influenza outbreaks using machine learning techniques. This algorithm leverages historical data to identify trends and improve predictive accuracy, ultimately aiding in timely public health responses.
+
+The second contribution of this report consists of building an intuitive, easy-to-use, and user-friendly software application. Our aim is to create a tool that will help healthcare professionals and policymakers utilize predictive models effectively, facilitating informed decision-making regarding vaccination strategies and resource allocation.
+
+The third contribution of this thesis consists of a comprehensive evaluation of the developed models against traditional forecasting methods. This includes performance assessments through various metrics, enabling us to illustrate the advantages of machine learning approaches in enhancing influenza surveillance and outbreak prediction capabilities.
+
+
+The present work contains $xyz$ bibliographical references and is structured in five chapters as follows.
+
+The first chapter/section is a short introduction in $\ldots$.
+
+The second chapter/section describes $\ldots$.
+
+The chapter/section \ref{chapter:proposedApproach} details $\ldots$.
+
+
+
+\chapter{Scientific Problem}
+\label{section:scientificProblem}
+
+
+\section{Problem definition}
+\label{section:problemDefinition}
+
+Understanding the evolution and spread of influenza remains a critical challenge in public health. Despite ongoing research and data collection efforts, predicting flu outbreaks and vaccine responses accurately is complex due to the high variability among individuals and the frequent presence of incomplete datasets. Traditional epidemiological models often struggle to handle this complexity and missing data effectively.
+
+The core problem addressed in this research is the development of an intelligent algorithm capable of handling incomplete datasets to predict the evolution and spread of influenza. Machine learning offers significant promise in this area due to its ability to analyze large, heterogeneous datasets and uncover patterns that traditional methods may miss. By focusing on the variability among individuals and leveraging the strengths of various machine learning algorithms, we aim to improve the accuracy of influenza predictions and vaccine response analyses.
+
+\textbf{Key challenges include:}
+
+\begin{itemize}
+    \item \textbf{Handling Incomplete Data}: Many datasets contain missing values, making it difficult to build reliable predictive models. Efficiently managing and imputing these missing values is crucial.
+    \item \textbf{Algorithm Selection}: With hundreds of machine learning algorithms available, selecting the optimal one for a given dataset is a non-trivial task.
+    \item \textbf{Interindividual Variability}: Capturing and understanding the variability in responses among different individuals is essential for accurate predictions.
+\end{itemize}
+
+
+
+\textbf{Formally, the problem can be defined as follows:}
+
+\begin{itemize}
+    \item \textbf{Inputs}:
+    \begin{itemize}
+        \item Clinical datasets from influenza vaccination studies, potentially including incomplete data.
+        \item Features such as patient demographics, immune response markers, and historical vaccination data.
+    \end{itemize}
+    \item \textbf{Outputs}:
+    \begin{itemize}
+        \item Predicted antibody responses to influenza vaccination.
+        \item Identification of significant immune cell subsets associated with robust vaccine responses.
+        \item Comparative performance metrics of different machine learning algorithms on the given datasets.
+    \end{itemize}
+\end{itemize}
+This problem is both interesting and important because accurate predictions and analyses can significantly enhance vaccine development and public health strategies. By leveraging machine learning to handle incomplete datasets and interindividual variability, we can:
+
+\begin{itemize}
+    \item \textbf{Optimize Vaccine Strategies}: Improve the understanding of vaccine efficacy and tailor vaccination strategies to different population groups.
+    \item \textbf{Enhance Predictive Models}: Develop more robust models for predicting flu outbreaks and vaccine responses, leading to better preparedness and response.
+    \item \textbf{Facilitate Hypothesis Generation}: Enable data-driven hypothesis generation from diverse clinical datasets, accelerating biomedical research.
+\end{itemize}
+This research draws inspiration from projects like SIMON, which demonstrates the potential of machine learning in understanding vaccine responses despite incomplete data. By building on these ideas, we aim to create an intelligent algorithm that can provide valuable insights into influenza evolution and spread, ultimately contributing to more effective public health interventions.
+
+ 
+
+
+
+
+\chapter{State of the Art/Related Work}
+\label{chapter:stateOfArt}
+
+This chapter reviews existing methods and approaches that are closely aligned with our work on utilizing machine learning to identify immune predictors in the context of influenza vaccination. Specifically, we focus on projects aimed at distinguishing between high and low responders to influenza vaccines. We will discuss various relevant studies, their methodologies, and how our approach offers unique contributions to this important field.
+
+\section{Related Work}
+
+\subsection{SIMON: Sequential Iterative Modelling "OverNight"} \cite{SIMON1}
+\begin{itemize}
+    \item \textbf{Problem and Method:} SIMON investigates influenza vaccine responses by employing machine learning algorithms to analyze clinical data. Its primary goal is to identify immune predictors that can differentiate between high and low vaccine responders, leveraging a range of algorithms to handle datasets with missing values.
+    \item \textbf{Difference in Problem and Method:} While our project shares a similar goal of identifying immune predictors, we emphasize a specific selection of features derived from data intersections to enhance model accuracy. Our approach focuses on refining the feature set utilized in training the models, potentially leading to improved predictive power.
+    \item \textbf{Advantages of Our Method:} By concentrating on the most relevant features and employing advanced machine learning techniques, we aim to streamline the analysis process. This focused approach may lead to clearer insights into the mechanisms driving immune responses, thereby providing a practical framework for future vaccine development.
+\end{itemize}
+
+\subsection{FluPRINT} \cite{FLUPRINT1}
+\label{section:FluPRINT}
+
+\begin{itemize}
+    \item \textbf{Problem and Method:} FluPRINT focuses on analyzing immune responses to influenza vaccines to identify key biomarkers that differentiate between high and low responders. This approach is similar to our work, which also aims to uncover immune predictors related to vaccine efficacy.
+    
+    \item \textbf{Differences:} While FluPRINT targets the identification of immune predictors associated with vaccine responses, our study may incorporate different datasets or machine learning techniques that could enhance predictive accuracy or offer unique insights into immune mechanisms.
+
+    \item \textbf{Advantages of Our Method:} By concentrating on the identification of specific immune predictors, our methodology can provide a more detailed understanding of the immune response to vaccination. This focused approach may allow for more precise recommendations for vaccine optimization, contributing to better clinical outcomes.
+\end{itemize}
+
+\subsection{EpiFlu: Epidemiological Influenza Modelling}
+\begin{itemize}
+    \item \textbf{Problem and Method:} EpiFlu employs traditional epidemiological models to assess the spread of influenza and its impact on public health. It primarily focuses on population-level data and outcomes related to influenza transmission.
+    \item \textbf{Difference in Problem and Method:} Unlike EpiFlu, our approach is centered on individual immune responses to vaccination, rather than broader epidemiological trends. We aim to identify specific biomarkers that can predict how individuals respond to vaccines, which is critical for personalized vaccine strategies.
+    \item \textbf{Advantages of Our Method:} Our targeted focus on individual-level predictors allows for a deeper understanding of the immunological responses to vaccination, paving the way for tailored vaccine recommendations. This could ultimately lead to improved vaccine efficacy and patient outcomes.
+\end{itemize}
+
+\section{Summary of Contributions}
+
+The main contributions of our work are:
+\begin{itemize}
+    \item Developing a machine learning algorithm specifically designed to identify immune predictors that differentiate between high and low responders to influenza vaccination.
+    \item Building a user-friendly software application to facilitate the analysis of immune data, making it accessible for researchers and clinicians alike.
+    \item Providing empirical results that support the effectiveness of our approach, contributing to the ongoing research in influenza vaccination strategies.
+\end{itemize}
+
+Through our efforts, we aim to advance the understanding of vaccine responses and improve the development of effective influenza vaccines, ultimately enhancing public health outcomes.
+
+
+In order to cite a given work you can use a bib file (see the example) and the $\ $ \textit{cite} command:
+\cite{kennedy1}, \cite{Koh06}, \cite{Berlekamp82}, \cite{Storn95}, \cite{firefox}.
+
+
+
+\chapter{Investigated approach}
+\label{chapter:proposedApproach}
+
+Describe your approach!
+
+Describe in reasonable detail the algorithm you are using to address this problem. A psuedocode description of the algorithm you are using is frequently useful. Trace through a concrete example, showing how your algorithm processes this example. The example should be complex enough to illustrate all of the important aspects of the problem but simple enough to be easily understood. If possible, an intuitively meaningful example is better than one with meaningless symbols.
+
+
+\chapter{Application (Study case)}
+\label{chapter:application}
+
+
+\section{App's description  and the main functionalities}
+\label{section:appDescription}
+
+The primary scientific problem addressed by this project is the need for effective and accurate prediction of influenza vaccine responses and the spread of influenza. Understanding these processes is crucial for improving vaccine development, optimizing vaccination strategies, and ultimately mitigating the impact of influenza outbreaks. The complexity of the problem arises from the high variability in individual immune responses to vaccines and the diverse factors influencing the spread of the virus. 
+
+\paragraph{Application Description}
+
+The application serves as a comprehensive platform for epidemiologists, public health officials, and researchers, providing tools for data analysis, model training, and predictive analytics. It facilitates the integration of clinical datasets, performs complex data preprocessing, and applies multiple machine learning algorithms to generate insightful predictions. The user-friendly interface ensures accessibility for users with varying levels of technical expertise, allowing them to harness the power of machine learning without needing extensive programming knowledge.
+
+\paragraph{Main Functionalities and Their Specification}
+
+\begin{enumerate}
+    \item \textbf{Data Integration and Preprocessing}
+    \begin{itemize}
+        \item \textbf{Import Data}: Users can upload datasets in various formats (CSV, Excel).
+        \item \textbf{Data Cleaning}: Automated handling of missing values and data normalization.
+        \item \textbf{Feature Engineering}: Identification and extraction of relevant features from raw data.
+    \end{itemize}
+    \item \textbf{Multi-Set Intersection Analysis}
+    \begin{itemize}
+        \item \textbf{Run Mulset}: Perform multi-set intersections to identify shared features across different subsets of the data.
+        \item \textbf{Subset Filtering}: Filter and select subsets based on predefined criteria such as feature count and sample size.
+    \end{itemize}
+    \item \textbf{Machine Learning Model Training}
+    \begin{itemize}
+        \item \textbf{Algorithm Selection}: Apply multiple machine learning algorithms (e.g., Random Forest, SVM) to the selected subsets.
+        \item \textbf{Cross-Validation}: Perform cross-validation to evaluate model performance and prevent overfitting.
+        \item \textbf{Model Training}: Train models on the processed data and save the trained models for future use.
+    \end{itemize}
+    \item \textbf{Predictive Analytics}
+    \begin{itemize}
+        \item \textbf{Prediction Generation}: Generate predictions for vaccine responses and influenza spread based on trained models.
+        \item \textbf{Result Visualization}: Visualize prediction results through charts and graphs, making it easier to interpret the data.
+    \end{itemize}
+    \item \textbf{Evaluation and Reporting}
+    \begin{itemize}
+        \item \textbf{Model Evaluation}: Provide detailed metrics for model performance, including accuracy, classification reports, and confusion matrices.
+        \item \textbf{Export Results}: Export analysis results and visualizations in various formats (PDF, Excel) for reporting and further analysis.
+    \end{itemize}
+    \item \textbf{User Interface}
+    \begin{itemize}
+        \item \textbf{Dashboard}: Centralized dashboard for accessing all functionalities.
+        \item \textbf{Interactive Tools}: User-friendly tools for data visualization and model interaction.
+        \item \textbf{Help and Support}: Integrated help documentation and support features to assist users.
+
+    \end{itemize}
+
+\end{enumerate}
+
+ \textbf{Inputs}:
+
+\begin{enumerate}
+    \item \textbf{Clinical Data}: Information from various studies including patient demographics, vaccination history, and immunological responses.
+    \item \textbf{Feature Sets}: Subsets of features derived from the clinical data that might be predictive of vaccine response or flu spread.
+\end{enumerate}
+\textbf{Outputs}:
+
+\begin{enumerate}
+    \item \textbf{Predictive Models}: Machine learning models trained on the clinical data to predict vaccine responses and flu spread.
+    \item \textbf{Predictions}: Predicted responses to influenza vaccines and potential influenza spread patterns.
+    \item \textbf{Evaluation Metrics}: Performance metrics for the trained models, including accuracy, precision, recall, and confusion matrices.
+\end{enumerate}
+
+\paragraph{Why It Must Be Solved by an Intelligent Algorithm}
+
+\begin{enumerate}
+    \item \textbf{Complexity and Variability}: Influenza vaccine responses and virus spread are influenced by numerous factors, including genetics, prior immunity, and environmental conditions. This complexity makes traditional statistical approaches inadequate.
+    \item \textbf{Incomplete Data}: Clinical datasets often contain missing values, which complicate analysis. Machine learning algorithms, especially those designed to handle incomplete data, can extract meaningful insights despite these gaps.
+    \item \textbf{Large Datasets}: The volume of data generated from multiple clinical studies requires automated and scalable solutions. Intelligent algorithms can process large datasets efficiently and identify patterns that are not immediately apparent.
+\end{enumerate}
+
+\paragraph{Advantages of the Machine Learning Approach}
+
+\begin{itemize}
+    \item \textbf{Adaptability}: Machine learning models can be retrained as new data becomes available, ensuring that predictions remain accurate and up-to-date.
+    \item \textbf{Automation}: Automating the analysis process saves time and resources, allowing researchers to focus on interpreting results and making data-driven decisions.
+    \item \textbf{Robustness}: Advanced algorithms, such as ensemble methods and support vector machines, offer robustness against overfitting and improve predictive accuracy.
+\end{itemize}
+
+\paragraph{Disadvantages and Challenges}
+
+\begin{itemize}
+    \item \textbf{Data Quality}: The effectiveness of machine learning models heavily depends on the quality and representativeness of the input data.
+    \item \textbf{Interpretability}: Some machine learning models, particularly complex ones like deep neural networks, may lack transparency, making it difficult to understand how predictions are made.
+    \item \textbf{Computational Resources}: Training and validating sophisticated machine learning models can be computationally intensive, requiring significant processing power and memory.
+\end{itemize}
+ 
+
+
+\section{App's design}
+\label{section:appDesign}
+
+\begin{itemize}
+	\item use cases
+	\item diagrams (class diagram, sequence diagram, database structure)
+\end{itemize}
+
+
+\section{Implementation}
+\label{section:appImplementation}
+
+Give details about app's implementations (language, technologies, frameworks, special settings, etc.)
+
+
+\section{Testing of the codebase}
+\label{section:appTesting}
+
+Asserts, unitTestings, coverage, etc.
+
+
+\section{Numerical validation}
+\label{section:numericalValidation}
+
+Explain the experimental methodology and the numerical results obtained with your approach and the state of art approache(s).
+
+Try to perform a comparison of several approaches.
+
+Statistical validation of the results.
+
+
+\subsection{Methodology}
+\label{section:methodology}
+
+\begin{itemize}
+	\item What are criteria you are using to evaluate your method? 
+	\item What specific hypotheses does your experiment test? Describe the experimental methodology that you used. 
+	\item What are the dependent and independent variables? 
+	\item What is the training/test data that was used, and why is it realistic or interesting? Exactly what performance data did you collect and how are you presenting and analyzing it? Comparisons to competing methods that address the same problem are particularly useful.
+\end{itemize}
+
+\subsection{Data}
+\label{section:data}
+
+Describe the used data.
+
+\subsection{Results}
+\label{section:results}
+
+Present the quantitative results of your experiments. Graphical data presentation such as graphs and histograms are frequently better than tables. What are the basic differences revealed in the data. Are they statistically significant?
+
+\subsection{Discussion}
+\label{section:discussion}
+
+\begin{itemize}
+	\item Is your hypothesis supported? 
+	\item What conclusions do the results support about the strengths and weaknesses of your method compared to other methods? 
+	\item How can the results be explained in terms of the underlying properties of the algorithm and/or the data. 
+\end{itemize}
+
+
+
+\chapter{Conclusion and future work}
+\label{chapter:concl}
+
+Try to emphasise the strengths and the weaknesses of your approach.
+What are the major shortcomings of your current method? For each shortcoming, propose additions or enhancements that would help overcome it. 
+
+Briefly summarize the important results and conclusions presented in the paper. 
+
+\begin{itemize}
+	\item What are the most important points illustrated by your work? 
+	\item How will your results improve future research and applications in the area? 
+\end{itemize}
+
+
+\chapter{Latex examples}
+
+Item example: 
+
+\begin{itemize}
+	\item content of item1
+ 	\item content of item2
+ 	\item content of item3
+\end{itemize}
+
+
+
+Figure example 
+
+$\ldots$ (see Figure \ref{swarmsize})
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics{Fig/FitEvol.eps}}  
+	\caption{The evolution of the swarm size during the GA generations. This results were obtained for the $f_2$ test function with 5 dimensions.}
+	\label{swarmsize}
+\end{figure}
+
+
+Table example: (see Table \ref{tab3PSO})
+
+
+\begin{table}[htbp]
+	\caption{The parameters of the PSO algorithm (the micro level algorithm) used to compute the fitness of a GA chromosome.}
+	\label{tab3PSO}
+		\begin{center}
+			\begin{tabular}{p{220pt}c}
+
+				\textbf{Parameter}& \textbf{Value} \\
+				\hline\hline
+ 				Number of generations& 50 \\
+ 				Number of function evaluations/generation& 10 \\
+ 				Number of dimensions of the function to be optimized& 5 \\
+ 				Learning factor $c_{1}$& 2 \\
+ 				Learning factor $c_{2}$ & 1.8\\
+ 				Inertia weight& 0.5 + $\frac{rand()}{2}$\\
+		
+			\end{tabular}
+		\end{center}
+\end{table}
+
+Algorithm example 
+
+$\ldots$ (see Algorithm \ref{NGalg}).
+
+
+\algsetup{indent=1em, linenosize=\footnotesize}
+
+\begin{algorithm}
+	\caption{SGA - Spin based Genetic AQlgorithm}
+	\label{NGalg}
+		\begin{algorithmic}
+
+
+			\STATE \textbf{BEGIN}
+  		\STATE @ Randomly create the initial GA population.
+  		\STATE @ Compute the fitness of each individual.
+  		\FOR{i=1 TO NoOfGenerations}
+  			\FOR{j=1 TO PopulationSize}
+  				\STATE p $\leftarrow$ RandomlySelectParticleFromGrid();
+  				\STATE n $\leftarrow$ RandomlySelectParticleFromNeighbors(p);
+  				\STATE @ Crossover(p, n, off);
+  				\STATE @ Compute energy $\Delta H$
+  				\IF {$\Delta H$ satisfy the Ising condition}
+  					\STATE @ Replace(p,off);
+  				\ENDIF
+  			\ENDFOR
+  		\ENDFOR
+  		\STATE \textbf{END}
+\end{algorithmic}
+\end{algorithm}
+
+
+\bibliographystyle{plain}
+\bibliography{BibAll}
+
+\end{document}
+
